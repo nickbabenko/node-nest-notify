@@ -3,6 +3,8 @@ const notifier = require('node-notifier')
 const open = require('open')
 const axios = require('axios')
 
+require('dotenv').config()
+
 const client = mqtt.connect(process.env.MQTT_URL)
 
 client.on('connect', () => { 
